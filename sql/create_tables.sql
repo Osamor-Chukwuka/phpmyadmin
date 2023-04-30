@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `pma__pdf_pages` (
   PRIMARY KEY  (`page_nr`),
   KEY `db_name` (`db_name`)
 )
-  COMMENT='PDF relation pages for phpMyAdmin'
+  COMMENT='PDF relation pages, for phpMyAdmin'
   DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 
 -- --------------------------------------------------------
@@ -198,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `pma__table_info` (
   `display_field` varchar(64) NOT NULL default '',
   PRIMARY KEY  (`db_name`,`table_name`)
 )
-  COMMENT='Table information for phpMyAdmin'
+  COMMENT='Table information, for phpMyAdmin'
   DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 
 -- --------------------------------------------------------
@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `pma__userconfig` (
   `config_data` text NOT NULL,
   PRIMARY KEY  (`username`)
 )
-  COMMENT='User preferences storage for phpMyAdmin'
+  COMMENT='User preferences storage, for phpMyAdmin'
   DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 
 -- --------------------------------------------------------
